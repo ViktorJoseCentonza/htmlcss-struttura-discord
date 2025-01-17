@@ -20,17 +20,32 @@ body {
 
 /*premade-containers-sizing-begin*/
 
-.content-container {
-    height: 500px;
-    width: 62.5%;
-}
+.content-section {
+    height: 600px;
+    justify-content: center;
+    align-items: center;
 
-.img-container {
-    height: 100%;
-}
+    .content-container {
+        justify-content: center;
+        align-items: center;
+        width: 62.5%;
+        height: 500px;
 
-.paragraph-container {
-    height: 100%;
+        .img-container {
+            height: 100%;
+            flex-grow: 3;
+        }
+
+        .paragraph-container {
+            height: 100%;
+            flex-grow: 2;
+        }
+
+        .vertical-container {
+            height: 100%;
+            flex-grow: 1;
+        }
+    }
 }
 
 /*premade-containers-sizing-end*/
@@ -52,72 +67,92 @@ body {
                 background-color: orange;
             }
 
-            .logo-section {
+            #logo-container {
                 background-color: green;
             }
 
-            .login-section {
+            #login-container {
                 background-color: green;
             }
-
-
         }
     }
 
-    main section div,
-    main section div div {
-        /*box around all divs inside main and inside those divs*/
-        border: 3px dotted black;
+    /*box around all divs inside main and inside those divs*/
+    header div div,
+    header div nav,
+    section div,
+    section div div {
+
+        border: 2px dotted black;
     }
 
+    #info-section div div:not(#social-container) {
+        border: 2px dotted white;
+    }
+
+    /*box-debug-end*/
     /*premade-containers-debug-begin*/
 
     .content-container {
         background-color: violet;
+
+        .img-container {
+            background-color: lightcoral;
+        }
+
+        .paragraph-container {
+            background-color: pink;
+        }
+
+        .vertical-container {
+            background-color: turquoise;
+        }
+
     }
 
-    .img-container {
-        background-color: lightcoral;
-    }
-
-    .paragraph-container {
-        background-color: pink;
-    }
 
     /*premade-containers-debug-end*/
 
-    #jumbotron {
-        background-color: blue;
-    }
+    main {
+        #jumbotron {
+            background-color: blue;
+        }
 
-    #invite-only {
-        background-color: white;
-    }
+        #invite-only {
+            background-color: white;
+        }
 
-    #community {
-        background-color: lightgray;
-    }
+        #community {
+            background-color: lightgray;
+        }
 
-    #fandom {
-        background-color: white;
-    }
+        #fandom {
+            background-color: white;
+        }
 
-    #technology {
-        background-color: lightgray;
+        #technology {
+            background-color: lightgray;
 
-        .img-container {
-            background-color: green;
+            .img-container {
+                background-color: green;
+            }
         }
     }
 
+
+
     footer {
         background-color: black;
+
+        #info-section {
+            background-color: black;
+            border-bottom: 2px solid gray;
+
+            #social-container.footercontainer {
+                background-color: palevioletred;
+            }
+        }
     }
-
-
-
-
-
 }
 
 /*debug-end*/
@@ -128,41 +163,39 @@ header {
     justify-content: space-around;
     align-items: center;
 
-
-}
-
-.header-container {
-    width: 62.5%;
-    align-items: center;
-    height: 50px;
-
-    section {
-        height: 50px;
-        width: 20%;
+    .header-container {
+        width: 62.5%;
         align-items: center;
-        padding: 0.75rem;
-    }
-
-    nav {
         height: 50px;
-        width: 60%;
-        align-items: center;
-        justify-content: center;
 
-        gap: 10px;
+        div {
+            height: 50px;
+            width: 20%;
+            align-items: center;
+            padding: 0.75rem;
+        }
+
+        nav {
+            height: 50px;
+            width: 60%;
+            align-items: center;
+            justify-content: center;
+
+            gap: 10px;
+        }
+
+        #login-container {
+            justify-content: end;
+        }
     }
 }
 
-.login-section {
-    justify-content: end;
-}
+
 
 /*header-end*/
 /*main-begin*/
 
 #jumbotron {
-    justify-content: center;
-    align-items: center;
     height: 500px;
 
     .content-container {
@@ -171,31 +204,50 @@ header {
     }
 }
 
-.content-section {
-    height: 600px;
-    justify-content: center;
-    align-items: center;
+#technology {
+    height: 1000px;
 
     .content-container {
-        justify-content: center;
-        align-items: center;
-
-        .img-container {
-            height: 100%;
-            min-width: 60%;
-        }
-
-        .paragraph-container {
-            height: 100%;
-            min-width: 40%;
-        }
-
+        height: 90%;
     }
 
-
-
 }
 
-footer {
+/*main-end*/
+/*footer-begin*/
+
+.footercontainer {
     height: 100%;
 }
+
+#info-section {
+    height: 630px;
+    padding-top: 0.75rem;
+    padding-bottom: 2.5rem;
+
+    .content-container {
+        height: 100%;
+
+        #social-container {
+            flex-grow: 2;
+            background-color: red;
+        }
+    }
+}
+
+#footer-section.content-section {
+    height: 110px;
+    padding-top: 1.875rem;
+
+    .content-container {
+        height: 80px;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            padding: 0.625rem 0.875rem 0.625rem 0.875rem;
+        }
+    }
+}
+
+/*footer-end*/
