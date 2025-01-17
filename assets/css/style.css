@@ -4,6 +4,7 @@
     padding: 0px;
     border: 0px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html,
@@ -245,7 +246,7 @@ header {
         align-items: center;
 
         div {
-            padding: 0.625rem 0.875rem 0.625rem 0.875rem;
+            padding: 0.5rem 1.25rem 0.5rem 1.25rem;
         }
     }
 }
