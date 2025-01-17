@@ -149,10 +149,21 @@ body {
             background-color: black;
             border-bottom: 2px solid gray;
 
-            #social-container.footercontainer {
-                background-color: palevioletred;
+            #social-container {
+                background-color: red;
+            }
+
+        }
+
+        #footer-section .content-container {
+            background-color: lightseagreen;
+
+            div {
+                background-color: pink;
             }
         }
+
+
     }
 }
 
@@ -160,24 +171,22 @@ body {
 
 /*header-begin*/
 header {
-    min-height: 80px;
+    padding: 1.875rem 0.75rem 1.875rem 0.75rem;
     justify-content: space-around;
     align-items: center;
 
     .header-container {
         width: 62.5%;
         align-items: center;
-        height: 50px;
 
         div {
-            height: 50px;
+            padding: 0.875rem 0.75rem 0.875rem 0.75rem;
             width: 20%;
             align-items: center;
-            padding: 0.75rem;
         }
 
         nav {
-            height: 50px;
+            padding: 0.875rem 0.75rem 0.875rem 0.75rem;
             width: 60%;
             align-items: center;
             justify-content: center;
@@ -231,21 +240,23 @@ header {
 
         #social-container {
             flex-grow: 2;
-            background-color: red;
+
         }
     }
 }
 
 #footer-section.content-section {
-    height: 110px;
-    padding-top: 1.875rem;
+    height: fit-content;
+    padding: 1.875rem 0rem 0rem 0rem;
 
     .content-container {
-        height: 80px;
+        height: fit-content;
         justify-content: space-between;
         align-items: center;
+        padding: 1.1875rem 1.25rem 1.1875rem 1.25rem;
 
         div {
+
             padding: 0.5rem 1.25rem 0.5rem 1.25rem;
         }
     }
