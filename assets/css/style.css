@@ -1,3 +1,4 @@
+/*general-attributes-begin*/
 * {
     margin: 0px;
     padding: 0px;
@@ -5,6 +6,40 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+/*general-attributes-end*/
+
+/*utility-begin*/
+.d-flex {
+    display: flex;
+}
+
+/*premade-containers-sizing-begin*/
+
+.content-container {
+    height: 500px;
+    width: 62.5%;
+}
+
+.img-container {
+    height: 100%;
+}
+
+.paragraph-container {
+    height: 100%;
+}
+
+/*premade-containers-sizing-end*/
+
+
+/*utility-end*/
+
+
+/*debug-begin*/
 .debug {
 
     header {
@@ -35,32 +70,48 @@
         border: 3px dotted black;
     }
 
-    #jumbotron {
-        background-color: blue;
+    /*premade-containers-debug-begin*/
 
-        .jumbo-content-container {
-            background-color: lightcoral;
-        }
+    .content-container {
+        background-color: violet;
     }
 
-    #invite_only {
-        background-color: lightblue;
+    .img-container {
+        background-color: lightcoral;
+    }
+
+    .paragraph-container {
+        background-color: pink;
+    }
+
+    /*premade-containers-debug-end*/
+
+    #jumbotron {
+        background-color: blue;
+    }
+
+    #invite-only {
+        background-color: white;
     }
 
     #community {
-        background-color: blue;
+        background-color: lightgray;
     }
 
     #fandom {
-        background-color: lightblue;
+        background-color: white;
     }
 
     #technology {
-        background-color: blue;
+        background-color: lightgray;
+
+        .img-container {
+            background-color: green;
+        }
     }
 
     footer {
-        background-color: red;
+        background-color: black;
     }
 
 
@@ -69,12 +120,9 @@
 
 }
 
-.d-flex {
-    display: flex;
-}
+/*debug-end*/
 
-
-
+/*header-begin*/
 header {
     min-height: 80px;
     justify-content: space-around;
@@ -109,16 +157,45 @@ header {
     justify-content: end;
 }
 
-main section {
-    height: 500px;
-}
+/*header-end*/
+/*main-begin*/
 
 #jumbotron {
     justify-content: center;
     align-items: center;
+    height: 500px;
 
-    .jumbo-content-container {
+    .content-container {
         height: 80%;
         width: 47.5%;
     }
+}
+
+.content-section {
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+
+    .content-container {
+        justify-content: center;
+        align-items: center;
+
+        .img-container {
+            height: 100%;
+            min-width: 60%;
+        }
+
+        .paragraph-container {
+            height: 100%;
+            min-width: 40%;
+        }
+
+    }
+
+
+
+}
+
+footer {
+    height: 100%;
 }
