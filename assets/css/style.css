@@ -2,4 +2,95 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
+    box-sizing: border-box;
+}
+
+.debug {
+
+    header {
+        background-color: red;
+    }
+
+    #jumbotron {
+        background-color: blue;
+    }
+
+    #invite_only {
+        background-color: lightblue;
+    }
+
+    #community {
+        background-color: blue;
+    }
+
+    #fandom {
+        background-color: lightblue;
+    }
+
+    #technology {
+        background-color: blue;
+    }
+
+    footer {
+        background-color: red;
+    }
+
+    .header-container {
+        background-color: yellow;
+
+    }
+
+    nav {
+        background-color: orange;
+    }
+
+    .logo-section {
+        background-color: green;
+    }
+
+    .login-section {
+        background-color: green;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+header {
+    min-height: 80px;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.header-container {
+    width: 62.5%;
+    align-items: center;
+    height: 50px;
+
+    section {
+        height: 50px;
+        width: 20%;
+        align-items: center;
+        padding: 0.75rem;
+    }
+
+    nav {
+        height: 50px;
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+
+        gap: 10px;
+    }
+}
+
+nav {
+    text-align: center;
+}
+
+.login-section {
+    justify-content: end;
 }
