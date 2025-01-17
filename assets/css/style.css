@@ -9,10 +9,38 @@
 
     header {
         background-color: red;
+
+        .header-container {
+            background-color: yellow;
+
+            nav {
+                background-color: orange;
+            }
+
+            .logo-section {
+                background-color: green;
+            }
+
+            .login-section {
+                background-color: green;
+            }
+
+
+        }
+    }
+
+    main section div,
+    main section div div {
+        /*box around all divs inside main and inside those divs*/
+        border: 3px dotted black;
     }
 
     #jumbotron {
         background-color: blue;
+
+        .jumbo-content-container {
+            background-color: lightcoral;
+        }
     }
 
     #invite_only {
@@ -35,27 +63,17 @@
         background-color: red;
     }
 
-    .header-container {
-        background-color: yellow;
 
-    }
 
-    nav {
-        background-color: orange;
-    }
 
-    .logo-section {
-        background-color: green;
-    }
 
-    .login-section {
-        background-color: green;
-    }
 }
 
 .d-flex {
     display: flex;
 }
+
+
 
 header {
     min-height: 80px;
@@ -87,10 +105,20 @@ header {
     }
 }
 
-nav {
-    text-align: center;
-}
-
 .login-section {
     justify-content: end;
+}
+
+main section {
+    height: 500px;
+}
+
+#jumbotron {
+    justify-content: center;
+    align-items: center;
+
+    .jumbo-content-container {
+        height: 80%;
+        width: 47.5%;
+    }
 }
