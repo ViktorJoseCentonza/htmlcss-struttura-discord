@@ -25,12 +25,13 @@ body {
     height: 600px;
     justify-content: center;
     align-items: center;
+    padding: 3.125rem 0rem 3.125rem 0rem;
 
     .content-container {
         justify-content: center;
         align-items: center;
         width: 62.5%;
-        height: 500px;
+        height: 100%;
 
         .img-container {
             height: 100%;
@@ -209,7 +210,6 @@ header {
     height: 500px;
 
     .content-container {
-        height: 80%;
         width: 47.5%;
     }
 }
